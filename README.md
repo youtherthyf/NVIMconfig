@@ -22,4 +22,4 @@ you can download it your self or copy the following into your terminal [**warnin
 
 for the plug-ins to work you need to install:
 open nvim
-execute ":PlugInstall"
+and execute ":PlugInstall"
