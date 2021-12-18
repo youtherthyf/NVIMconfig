@@ -14,7 +14,7 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 How to install:
 
 if you just want to use it, clone into your .config file
-you can download it your self or copy the following into your terminal [**warning**: this will completely replace your existing neovim config folder]:
+you can download it your self or copy the following into your terminal [**warning**: this will completely replace your existing neovim config folder]: 
 rm -rf ~/.config/nvim && git clone "https://github.com/youtherthyf/NVIMconfig" ~/.config/nvim/
 
 
