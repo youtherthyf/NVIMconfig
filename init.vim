@@ -1,21 +1,21 @@
 " for general settings
-:set number
+:set number "enable numbered lines
 :set autoindent
 :set tabstop=4
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=6
-:set mouse=a
+:set mouse=a "enable mouse usage
 :set mousefocus
 
 " plugins
 call plug#begin()
 
-	Plug 'https://github.com/vim-airline/vim-airline'
-	Plug 'https://github.com/preservim/nerdtree'
-	Plug 'https://github.com/ryanoasis/vim-devicons'
-	Plug 'https://github.com/tc50cal/vim-terminal'
-	Plug 'https://github.com/neoclide/coc.nvim' 
+	Plug 'https://github.com/vim-airline/vim-airline' "better status bar
+	Plug 'https://github.com/preservim/nerdtree' "adds a file manager
+	Plug 'https://github.com/ryanoasis/vim-devicons' "icons for the package manager
+	Plug 'https://github.com/tc50cal/vim-terminal' "adds a built in terminal
+	Plug 'https://github.com/neoclide/coc.nvim' "adds autocomplition tool, moduals need to be installed for each language
 
 call plug#end()
 
@@ -43,10 +43,9 @@ nmap <silent> <A-Right> :wincmd l<CR>
 :nnoremap <A-r> :TerminalVSplit bash<CR>
 
 
-"file manager(NERDTree) and Terminal on startup
+"file manager(NERDTree) startup
 function! StartUp()
 
-	execute 'TerminalSplit bash'
     if 0 == argc()
         NERDTree ~youther-mobile
     else
