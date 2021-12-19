@@ -23,3 +23,5 @@ you can download it your self or copy the following into your terminal [**warnin
 for the plug-ins to work you need to install:
 open nvim
 and execute ":PlugInstall"
+
+you will need to install Coc and the packages for any language you want to use
