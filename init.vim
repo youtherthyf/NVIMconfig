@@ -7,6 +7,9 @@
 :set softtabstop=6
 :set mouse=a "enable mouse usage
 :set mousefocus
+:set complete+=kspell
+:set completeopt=menuone,longest
+
 
 " plugins
 call plug#begin()
@@ -15,7 +18,7 @@ call plug#begin()
 	Plug 'https://github.com/preservim/nerdtree' "adds a file manager
 	Plug 'https://github.com/ryanoasis/vim-devicons' "icons for the package manager
 	Plug 'https://github.com/tc50cal/vim-terminal' "adds a built in terminal
-	Plug 'https://github.com/neoclide/coc.nvim' "adds autocomplition tool, moduals need to be installed for each language
+	Plug 'https://github.com/vim-scripts/AutoComplPop' "automatically opens the auto complete menu
 
 call plug#end()
 
@@ -24,26 +27,26 @@ call plug#end()
 
 "****keybindings and shortcuts*****
 
-"file manager shortcuts
+" file manager shortcuts
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-"window navigation
+" window navigation
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
-"for resizing windows
+" for resizing windows
 :map - <C-W>-
 :map + <C-W>+
 :map <M-<> <C-W><
 :map <M->> <C-W>>
-"launch terminal
+" launch terminal
 :nnoremap <A-t> :TerminalSplit bash<CR>
 :nnoremap <A-r> :TerminalVSplit bash<CR>
 
 
-"file manager(NERDTree) startup
+" file manager(NERDTree) startup
 function! StartUp()
 
     if 0 == argc()
