@@ -9,6 +9,8 @@
 :set mousefocus
 :set complete+=kspell
 :set completeopt=menuone,longest
+:set updatetime=300
+:set cmdheight=2
 
 
 " plugins
@@ -18,12 +20,10 @@ call plug#begin()
 	Plug 'https://github.com/preservim/nerdtree' "adds a file manager
 	Plug 'https://github.com/ryanoasis/vim-devicons' "icons for the package manager
 	Plug 'https://github.com/tc50cal/vim-terminal' "adds a built in terminal
-	Plug 'https://github.com/vim-scripts/AutoComplPop' "automatically opens the auto complete menu
+	Plug 'https://github.com/vim-scripts/AutoComplPop' "automatically opens the auto complete menuone
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
-
-
-
 
 "****keybindings and shortcuts*****
 
@@ -62,4 +62,3 @@ endfunction
 
 autocmd VimEnter * call StartUp()
 autocmd VimEnter * wincmd p
-
