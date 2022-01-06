@@ -20,8 +20,7 @@ if you just want to use it, clone into your .config file
 you can download it your self or copy the following into your terminal [**warning**: this will completely replace your existing neovim config folder]: 
  rm -rf ~/.config/nvim && git clone "https://github.com/youtherthyf/NVIMconfig" ~/.config/nvim/
 
-for the plug-ins to work you need to install:
+for the plug-ins to work you need to install them:
+
 open nvim
 and execute ":PlugInstall"
-
-you will need to install Coc and the packages for any language you want to use
