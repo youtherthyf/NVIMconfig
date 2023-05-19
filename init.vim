@@ -50,7 +50,7 @@ nmap <silent> <A-Right> :wincmd l<CR>
 function! StartUp()
 
     if 0 == argc()
-        NERDTree ~youther-mobile
+        NERDTree 
     else
         if argv(0) == '.'
             execute 'NERDTree' getcwd()
